@@ -5,8 +5,8 @@ build:
 
 all:
 	@echo "Building the project..."
-	muilti-lang-gen gen
-	npm run build
 	rm -rf docs
+	muilti-lang-gen gen
 	mv outputs docs
 	echo "url-parser-online.ipao.vip" > docs/CNAME
+	npm run build
