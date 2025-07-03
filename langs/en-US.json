@@ -58,31 +58,67 @@
         "maxUrls": "You can select a maximum of 3 URLs to compare"
     },
     "knowledge": {
-        "title": "HTTP Fundamentals",
-        "description": "Learn about HTTP protocols, URL structure, and basic web technologies",
+        "title": "URL Structure Guide",
+        "description": "Learn about URL components and understand the anatomy of Uniform Resource Locators",
         "urlStructure": {
-            "title": "URL Structure Explained",
-            "description": "Understanding the components of URLs and their functions"
+            "title": "Complete URL Structure",
+            "description": "The complete syntax structure of URLs and meaning of each component",
+            "details": "scheme://[userinfo@]host[:port][/path][?query][#fragment]"
         },
-        "protocols": {
-            "title": "Protocol Introduction",
-            "description": "HTTP vs HTTPS security comparison and other protocols"
+        "scheme": {
+            "title": "Scheme (Protocol)",
+            "description": "Defines the protocol used to access the resource, such as http, https, ftp, mailto",
+            "details": "Common: http(80), https(443), ftp(21), ws(80), wss(443)"
         },
-        "statusCodes": {
-            "title": "HTTP Status Codes",
-            "description": "Common HTTP status codes and their meanings"
+        "authority": {
+            "title": "Authority Component",
+            "description": "Contains user info, hostname, and port number for resource identification",
+            "details": "Format: [userinfo@]host[:port], e.g., user:pass@example.com:8080"
         },
-        "methods": {
-            "title": "HTTP Request Methods",
-            "description": "Detailed explanation of GET, POST, PUT, DELETE and other methods"
+        "host": {
+            "title": "Host (Domain/IP)",
+            "description": "Identifies the server by domain name or IP address, the most critical URL part",
+            "details": "Can be domain(example.com), IPv4(192.168.1.1) or IPv6([::1])"
         },
-        "headers": {
-            "title": "HTTP Headers",
-            "description": "Common HTTP header fields and their purposes"
+        "port": {
+            "title": "Port Number",
+            "description": "Specifies the service port on the server, uses protocol default when omitted",
+            "details": "Range: 1-65535, common defaults: 80(HTTP), 443(HTTPS), 21(FTP)"
         },
-        "cache": {
-            "title": "Caching Mechanisms",
-            "description": "Browser caching strategies and cache control"
+        "path": {
+            "title": "Path Component",
+            "description": "Specifies the exact location of resource on server, similar to filesystem path",
+            "details": "Hierarchical structure with / separators: /docs/guide/installation.html"
+        },
+        "query": {
+            "title": "Query Parameters",
+            "description": "Key-value pairs starting with ? to pass additional information to server",
+            "details": "Format: ?key1=value1&key2=value2, special characters need URL encoding"
+        },
+        "fragment": {
+            "title": "Fragment Identifier",
+            "description": "Starting with # for in-page navigation, typically points to specific page sections",
+            "details": "Client-side only, not sent to server, e.g., #section1"
+        },
+        "userinfo": {
+            "title": "User Information",
+            "description": "Contains username and password for authentication, rarely used in modern apps",
+            "details": "Format: username:password@, not recommended due to security concerns"
+        },
+        "encoding": {
+            "title": "URL Encoding Rules",
+            "description": "Special characters must be percent-encoded to ensure proper URL transmission",
+            "details": "Space→%20, Chinese→UTF-8 encoding, reserved chars like ?→%3F"
+        },
+        "relative": {
+            "title": "Relative URLs",
+            "description": "Path references based on current page location, simplifying URL writing",
+            "details": "./same level, ../parent, /root path, //protocol relative, ?query only"
+        },
+        "standards": {
+            "title": "URL Standards",
+            "description": "Follows RFC 3986 and other international standards for URL uniformity and compatibility",
+            "details": "Max length typically limited to 2048 chars, supports internationalized domain names"
         }
     },
     "examples": {

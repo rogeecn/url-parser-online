@@ -58,31 +58,67 @@
         "maxUrls": "最多只能选择3个URL进行对比"
     },
     "knowledge": {
-        "title": "HTTP 基础知识",
-        "description": "了解 HTTP 协议、URL 结构和 Web 技术的基础知识",
+        "title": "URL 结构科普",
+        "description": "深入了解 URL 的各个组成部分，掌握统一资源定位符的构成原理",
         "urlStructure": {
-            "title": "URL 结构详解",
-            "description": "了解 URL 的各个组成部分及其作用"
+            "title": "URL 完整结构",
+            "description": "统一资源定位符的完整语法结构和各部分含义",
+            "details": "scheme://[userinfo@]host[:port][/path][?query][#fragment]"
         },
-        "protocols": {
-            "title": "协议介绍",
-            "description": "HTTP vs HTTPS 安全性对比及其他协议"
+        "scheme": {
+            "title": "协议方案 (Scheme)",
+            "description": "定义访问资源的协议类型，如 http、https、ftp、mailto 等",
+            "details": "常见：http(80)、https(443)、ftp(21)、ws(80)、wss(443)"
         },
-        "statusCodes": {
-            "title": "HTTP 状态码",
-            "description": "常见 HTTP 状态码含义和用途"
+        "authority": {
+            "title": "权限部分 (Authority)",
+            "description": "包含用户信息、主机名和端口号的权限标识部分",
+            "details": "格式：[userinfo@]host[:port]，如 user:pass@example.com:8080"
         },
-        "methods": {
-            "title": "HTTP 请求方法",
-            "description": "GET, POST, PUT, DELETE 等请求方法详解"
+        "host": {
+            "title": "主机名 (Host)",
+            "description": "标识服务器的域名或IP地址，是URL中最重要的部分",
+            "details": "可以是域名(example.com)、IPv4(192.168.1.1)或IPv6([::1])"
         },
-        "headers": {
-            "title": "HTTP 头部字段",
-            "description": "常用 HTTP 头部字段的含义和作用"
+        "port": {
+            "title": "端口号 (Port)",
+            "description": "指定服务器上的特定服务端口，省略时使用协议默认端口",
+            "details": "范围：1-65535，常见默认端口：80(HTTP)、443(HTTPS)、21(FTP)"
         },
-        "cache": {
-            "title": "缓存机制",
-            "description": "浏览器缓存策略和缓存控制"
+        "path": {
+            "title": "路径 (Path)",
+            "description": "指定服务器上资源的具体位置，类似文件系统路径",
+            "details": "以/分隔的层级结构，如：/docs/guide/installation.html"
+        },
+        "query": {
+            "title": "查询参数 (Query)",
+            "description": "以?开头的键值对参数，用于传递额外信息给服务器",
+            "details": "格式：?key1=value1&key2=value2，需要URL编码特殊字符"
+        },
+        "fragment": {
+            "title": "片段标识符 (Fragment)",
+            "description": "以#开头的页面内定位标识，通常指向页面的特定部分",
+            "details": "仅在客户端使用，不会发送到服务器，如：#section1"
+        },
+        "userinfo": {
+            "title": "用户信息 (UserInfo)",
+            "description": "包含用户名和密码的认证信息，现代应用中已较少使用",
+            "details": "格式：username:password@，出于安全考虑不推荐在URL中暴露"
+        },
+        "encoding": {
+            "title": "URL 编码规则",
+            "description": "特殊字符需要进行百分号编码，确保URL的正确传输",
+            "details": "空格→%20，中文→UTF-8编码，保留字符需要编码如?→%3F"
+        },
+        "relative": {
+            "title": "相对 URL",
+            "description": "基于当前页面位置的相对路径引用，简化URL书写",
+            "details": "./同级、../上级、/根路径、//协议相对、?仅查询参数"
+        },
+        "standards": {
+            "title": "URL 标准规范",
+            "description": "遵循RFC 3986等国际标准，确保URL的统一性和兼容性",
+            "details": "最大长度通常限制在2048字符，支持国际化域名(IDN)"
         }
     },
     "examples": {

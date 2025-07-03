@@ -1,14 +1,212 @@
 [
     {
-        "code": "zh",
-        "name": "中文",
-        "displayName": "中文",
-        "file": "zh-CN.json"
+        "code": "ar",
+        "name": "العربية",
+        "displayName": "العربية",
+        "file": "ar-SA.json"
+    },
+    {
+        "code": "bg",
+        "name": "Български",
+        "displayName": "Български",
+        "file": "bg-BG.json"
+    },
+    {
+        "code": "cs",
+        "name": "Čeština",
+        "displayName": "Čeština",
+        "file": "cs-CZ.json"
+    },
+    {
+        "code": "da",
+        "name": "Dansk",
+        "displayName": "Dansk",
+        "file": "da-DK.json"
+    },
+    {
+        "code": "de",
+        "name": "Deutsch",
+        "displayName": "Deutsch",
+        "file": "de-DE.json"
+    },
+    {
+        "code": "el",
+        "name": "Ελληνικά",
+        "displayName": "Ελληνικά",
+        "file": "el-GR.json"
     },
     {
         "code": "en",
         "name": "English",
         "displayName": "English",
         "file": "en-US.json"
+    },
+    {
+        "code": "es",
+        "name": "Español",
+        "displayName": "Español",
+        "file": "es-ES.json"
+    },
+    {
+        "code": "et",
+        "name": "Eesti",
+        "displayName": "Eesti",
+        "file": "et-EE.json"
+    },
+    {
+        "code": "fa",
+        "name": "فارسی",
+        "displayName": "فارسی",
+        "file": "fa-IR.json"
+    },
+    {
+        "code": "fi",
+        "name": "Suomi",
+        "displayName": "Suomi",
+        "file": "fi-FI.json"
+    },
+    {
+        "code": "fr",
+        "name": "Français",
+        "displayName": "Français",
+        "file": "fr-FR.json"
+    },
+    {
+        "code": "he",
+        "name": "עברית",
+        "displayName": "עברית",
+        "file": "he-IL.json"
+    },
+    {
+        "code": "hr",
+        "name": "Hrvatski",
+        "displayName": "Hrvatski",
+        "file": "hr-HR.json"
+    },
+    {
+        "code": "hu",
+        "name": "Magyar",
+        "displayName": "Magyar",
+        "file": "hu-HU.json"
+    },
+    {
+        "code": "id",
+        "name": "Bahasa Indonesia",
+        "displayName": "Bahasa Indonesia",
+        "file": "id-ID.json"
+    },
+    {
+        "code": "it",
+        "name": "Italiano",
+        "displayName": "Italiano",
+        "file": "it-IT.json"
+    },
+    {
+        "code": "ja",
+        "name": "日本語",
+        "displayName": "日本語",
+        "file": "ja-JP.json"
+    },
+    {
+        "code": "ko",
+        "name": "한국어",
+        "displayName": "한국어",
+        "file": "ko-KR.json"
+    },
+    {
+        "code": "lt",
+        "name": "Lietuvių",
+        "displayName": "Lietuvių",
+        "file": "lt-LT.json"
+    },
+    {
+        "code": "nb",
+        "name": "Norsk Bokmål",
+        "displayName": "Norsk Bokmål",
+        "file": "nb-NO.json"
+    },
+    {
+        "code": "nl",
+        "name": "Nederlands",
+        "displayName": "Nederlands",
+        "file": "nl-NL.json"
+    },
+    {
+        "code": "pl",
+        "name": "Polski",
+        "displayName": "Polski",
+        "file": "pl-PL.json"
+    },
+    {
+        "code": "pt",
+        "name": "Português",
+        "displayName": "Português",
+        "file": "pt-PT.json"
+    },
+    {
+        "code": "pt-br",
+        "name": "Português (Brasil)",
+        "displayName": "Português (Brasil)",
+        "file": "pt-BR.json"
+    },
+    {
+        "code": "ru",
+        "name": "Русский",
+        "displayName": "Русский",
+        "file": "ru-RU.json"
+    },
+    {
+        "code": "sk",
+        "name": "Slovenčina",
+        "displayName": "Slovenčina",
+        "file": "sk-SK.json"
+    },
+    {
+        "code": "sr",
+        "name": "Српски",
+        "displayName": "Српски",
+        "file": "sr-RS.json"
+    },
+    {
+        "code": "sv",
+        "name": "Svenska",
+        "displayName": "Svenska",
+        "file": "sv-SE.json"
+    },
+    {
+        "code": "th",
+        "name": "ไทย",
+        "displayName": "ไทย",
+        "file": "th-TH.json"
+    },
+    {
+        "code": "tr",
+        "name": "Türkçe",
+        "displayName": "Türkçe",
+        "file": "tr-TR.json"
+    },
+    {
+        "code": "uk",
+        "name": "Українська",
+        "displayName": "Українська",
+        "file": "uk-UA.json"
+    },
+    {
+        "code": "vi",
+        "name": "Tiếng Việt",
+        "displayName": "Tiếng Việt",
+        "file": "vi-VN.json"
+    },
+    {
+        "code": "zh",
+        "name": "简体中文",
+        "displayName": "简体中文",
+        "file": "zh-CN.json"
+    },
+    {
+        "code": "zh-tw",
+        "name": "繁體中文",
+        "displayName": "繁體中文",
+        "file": "zh-TW.json"
     }
 ]
