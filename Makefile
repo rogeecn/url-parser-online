@@ -7,3 +7,5 @@ all:
 	@echo "Building the project..."
 	muilti-lang-gen gen
 	npm run build
+	rm -rf docs
+	mv outputs docs

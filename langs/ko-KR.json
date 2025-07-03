@@ -19,16 +19,15 @@
     "port": "포트",
     "pathname": "경로",
     "search": "쿼리 매개변수",
-    "hash": "해시"
-},
-"actions": {
-    "parse": "URL 분석",
-    "clear": "지우기",
-    "copy": "결과 복사"
-},
-"messages": {
-    "copied": "클립보드에 복사됨",
-    "invalidUrl": "잘못된 URL 형식",
-    "emptyUrl": "URL을 입력하세요"
-}
+    "hash": "해시",
+    "actions": {
+        "parse": "URL 분석",
+        "clear": "지우기",
+        "copy": "결과 복사"
+    },
+    "messages": {
+        "copied": "클립보드에 복사됨",
+        "invalidUrl": "잘못된 URL 형식",
+        "emptyUrl": "URL을 입력하세요"
+    }
 }
