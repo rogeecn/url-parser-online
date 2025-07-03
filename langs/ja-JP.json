@@ -1,0 +1,144 @@
+{
+    "title": "URL Parser Online - URL 分析ツール",
+    "description": "直感的なインターフェースでURLの各コンポーネントを分析・理解できる包括的なオンラインURLパースツールで、HTTP関連の知識も普及します。",
+    "keywords": "URLパーサー,URL分析,HTTPツール,オンラインツール,URLコンポーネント,クエリパラメータ",
+    "header": {
+        "title": "URL Parser Online",
+        "subtitle": "URL 分析ツール",
+        "description": "URLの構成要素を分析・理解する"
+    },
+    "nav": {
+        "parser": "URLパーサー",
+        "history": "履歴",
+        "compare": "比較",
+        "knowledge": "HTTP知識",
+        "language": "言語"
+    },
+    "parser": {
+        "title": "URLパーサー",
+        "inputLabel": "URLを入力",
+        "inputPlaceholder": "解析するURLを入力（複数URL対応、1行に1つ）",
+        "parseButton": "解析",
+        "clearButton": "クリア",
+        "exampleUrls": "URL例",
+        "batchMode": "バッチモード",
+        "privacyMode": "プライバシーモード",
+        "privacyModeHelp": "有効にすると、機密情報を含むURLは履歴に保存されません"
+    },
+    "result": {
+        "title": "解析結果",
+        "protocol": "プロトコル",
+        "userInfo": "ユーザー情報",
+        "host": "ホスト",
+        "port": "ポート",
+        "path": "パス",
+        "query": "クエリパラメータ",
+        "fragment": "フラグメント",
+        "copyButton": "コピー",
+        "copySuccess": "クリップボードにコピーしました",
+        "invalid": "無効なURL",
+        "empty": "解析するURLを入力してください"
+    },
+    "history": {
+        "title": "履歴",
+        "empty": "履歴なし",
+        "clearAll": "すべてクリア",
+        "parseAgain": "再解析",
+        "delete": "削除"
+    },
+    "compare": {
+        "title": "URL比較分析",
+        "selectUrls": "比較するURLを選択（最大3つ）",
+        "compareButton": "比較開始",
+        "clearCompare": "比較クリア",
+        "differences": "相違点",
+        "similarities": "類似点",
+        "exportReport": "レポート出力",
+        "noUrls": "比較するには最低2つのURLを選択してください",
+        "maxUrls": "比較できるURLは最大3つまでです"
+    },
+    "knowledge": {
+        "title": "URL構造ガイド",
+        "description": "URLコンポーネントについて学び、統一リソースロケータの構造を理解する",
+        "urlStructure": {
+            "title": "完全なURL構造",
+            "description": "URLの完全な構文構造と各コンポーネントの意味",
+            "details": "scheme://[userinfo@]host[:port][/path][?query][#fragment]"
+        },
+        "scheme": {
+            "title": "スキーム（プロトコル）",
+            "description": "リソースにアクセスするために使用されるプロトコルを定義（http、https、ftp、mailtoなど）",
+            "details": "一般的：http(80)、https(443)、ftp(21)、ws(80)、wss(443)"
+        },
+        "authority": {
+            "title": "権限コンポーネント",
+            "description": "リソース識別のためのユーザー情報、ホスト名、ポート番号を含む",
+            "details": "形式：[userinfo@]host[:port]、例：user:pass@example.com:8080"
+        },
+        "host": {
+            "title": "ホスト（ドメイン/IP）",
+            "description": "ドメイン名またはIPアドレスでサーバーを識別する最も重要なURL部分",
+            "details": "ドメイン(example.com)、IPv4(192.168.1.1)、IPv6([::1])が可能"
+        },
+        "port": {
+            "title": "ポート番号",
+            "description": "サーバー上のサービスポートを指定、省略時はプロトコルのデフォルトを使用",
+            "details": "範囲：1-65535、一般的なデフォルト：80(HTTP)、443(HTTPS)、21(FTP)"
+        },
+        "path": {
+            "title": "パスコンポーネント",
+            "description": "サーバー上のリソースの正確な場所を指定、ファイルシステムのパスに類似",
+            "details": "/で区切られた階層構造：/docs/guide/installation.html"
+        },
+        "query": {
+            "title": "クエリパラメータ",
+            "description": "?で始まるキーと値のペアで、サーバーに追加情報を渡す",
+            "details": "形式：?key1=value1&key2=value2、特殊文字はURLエンコードが必要"
+        },
+        "fragment": {
+            "title": "フラグメント識別子",
+            "description": "#で始まりページ内ナビゲーション用、通常は特定のページセクションを指す",
+            "details": "クライアントサイドのみ、サーバーには送信されない、例：#section1"
+        },
+        "userinfo": {
+            "title": "ユーザー情報",
+            "description": "認証用のユーザー名とパスワードを含む、現代のアプリではほとんど使用されない",
+            "details": "形式：username:password@、セキュリティ上の懸念から推奨されない"
+        },
+        "encoding": {
+            "title": "URLエンコーディングルール",
+            "description": "特殊文字は適切なURL送信を確保するためにパーセントエンコードが必要",
+            "details": "スペース→%20、日本語→UTF-8エンコーディング、予約文字(?→%3F)"
+        },
+        "relative": {
+            "title": "相対URL",
+            "description": "現在のページの場所に基づくパス参照、URL記述を簡略化",
+            "details": "./同じ階層、../親階層、/ルートパス、//プロトコル相対、?クエリのみ"
+        },
+        "standards": {
+            "title": "URL標準",
+            "description": "RFC 3986などの国際標準に従い、URLの統一性と互換性を確保",
+            "details": "通常、最大長は2048文字に制限、国際化ドメイン名をサポート"
+        }
+    },
+    "examples": {
+        "basic": "https://www.example.com",
+        "withPath": "https://www.example.com/path/to/resource",
+        "withQuery": "https://www.example.com/search?q=keyword&page=1",
+        "withFragment": "https://www.example.com/page#section",
+        "withPort": "https://www.example.com:8080/api",
+        "withAuth": "https://user:pass@www.example.com/secure",
+        "ftp": "ftp://files.example.com/directory/file.txt",
+        "mailto": "mailto:someone@example.com?subject=Hello"
+    },
+    "error": {
+        "invalidUrl": "有効なURLを入力してください",
+        "networkError": "ネットワークエラー、後でもう一度お試しください",
+        "storageError": "ローカルストレージエラー"
+    },
+    "footer": {
+        "copyright": "© 2024 URL Parser Online. All rights reserved.",
+        "openSource": "オープンソース",
+        "feedback": "フィードバック"
+    }
+}

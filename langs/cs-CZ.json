@@ -1,0 +1,28 @@
+{
+    "title": "Online URL Parser",
+    "description": "Jednoduchý online nástroj pro analýzu URL",
+    "inputs": {
+        "url": {
+            "label": "Zadejte URL",
+            "placeholder": "https://example.com/path?param=value"
+        }
+    },
+    "sections": {
+        "protocol": "Protokol",
+        "hostname": "Název hostitele",
+        "port": "Port",
+        "pathname": "Cesta",
+        "search": "Parametry dotazu",
+        "hash": "Hash"
+    },
+    "actions": {
+        "parse": "Analyzovat URL",
+        "clear": "Vymazat",
+        "copy": "Kopírovat výsledek"
+    },
+    "messages": {
+        "copied": "Zkopírováno do schránky",
+        "invalidUrl": "Neplatný formát URL",
+        "emptyUrl": "Prosím zadejte URL"
+    }
+}

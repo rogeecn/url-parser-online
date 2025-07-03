@@ -1,0 +1,28 @@
+{
+    "title": "Онлајн URL парсер",
+    "description": "Једноставан онлајн алат за анализу URL адреса",
+    "inputs": {
+        "url": {
+            "label": "Унесите URL",
+            "placeholder": "https://example.com/path?param=value"
+        }
+    },
+    "sections": {
+        "protocol": "Протокол",
+        "hostname": "Име хоста",
+        "port": "Порт",
+        "pathname": "Путања",
+        "search": "Параметри упита",
+        "hash": "Хеш"
+    },
+    "actions": {
+        "parse": "Анализирај URL",
+        "clear": "Очисти",
+        "copy": "Копирај резултат"
+    },
+    "messages": {
+        "copied": "Копирано у клипборд",
+        "invalidUrl": "Неважећи формат URL-а",
+        "emptyUrl": "Молимо унесите URL"
+    }
+}

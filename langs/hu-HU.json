@@ -1,0 +1,28 @@
+{
+    "title": "Online URL Elemző",
+    "description": "Egyszerű online eszköz URL-ek elemzéséhez",
+    "inputs": {
+        "url": {
+            "label": "URL megadása",
+            "placeholder": "https://example.com/path?param=value"
+        }
+    },
+    "sections": {
+        "protocol": "Protokoll",
+        "hostname": "Állomásnév",
+        "port": "Port",
+        "pathname": "Útvonal",
+        "search": "Lekérdezési paraméterek",
+        "hash": "Hash"
+    },
+    "actions": {
+        "parse": "URL elemzése",
+        "clear": "Törlés",
+        "copy": "Eredmény másolása"
+    },
+    "messages": {
+        "copied": "Vágólapra másolva",
+        "invalidUrl": "Érvénytelen URL formátum",
+        "emptyUrl": "Kérjük, adjon meg egy URL-t"
+    }
+}

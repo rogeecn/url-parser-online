@@ -1,0 +1,28 @@
+{
+    "title": "URL Parser Online",
+    "description": "Een eenvoudige online tool om URLs te ontleden",
+    "inputs": {
+        "url": {
+            "label": "Voer URL in",
+            "placeholder": "https://example.com/path?param=value"
+        }
+    },
+    "sections": {
+        "protocol": "Protocol",
+        "hostname": "Hostnaam",
+        "port": "Poort",
+        "pathname": "Pad",
+        "search": "Query parameters",
+        "hash": "Hash"
+    },
+    "actions": {
+        "parse": "URL ontleden",
+        "clear": "Wissen",
+        "copy": "Resultaat kopiëren"
+    },
+    "messages": {
+        "copied": "Gekopieerd naar klembord",
+        "invalidUrl": "Ongeldig URL-formaat",
+        "emptyUrl": "Voer een URL in"
+    }
+}

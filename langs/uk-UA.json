@@ -1,0 +1,28 @@
+{
+    "title": "Онлайн URL Parser",
+    "description": "Простий онлайн-інструмент для аналізу URL",
+    "inputs": {
+        "url": {
+            "label": "Введіть URL",
+            "placeholder": "https://example.com/path?param=value"
+        }
+    },
+    "sections": {
+        "protocol": "Протокол",
+        "hostname": "Ім'я хоста",
+        "port": "Порт",
+        "pathname": "Шлях",
+        "search": "Параметри запиту",
+        "hash": "Хеш"
+    },
+    "actions": {
+        "parse": "Аналізувати URL",
+        "clear": "Очистити",
+        "copy": "Копіювати результат"
+    },
+    "messages": {
+        "copied": "Скопійовано в буфер обміну",
+        "invalidUrl": "Недійсний формат URL",
+        "emptyUrl": "Будь ласка, введіть URL"
+    }
+}

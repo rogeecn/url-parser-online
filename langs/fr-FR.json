@@ -1,0 +1,28 @@
+{
+    "title": "Analyseur d'URL en ligne",
+    "description": "Un outil en ligne simple pour analyser les URLs",
+    "inputs": {
+        "url": {
+            "label": "Entrez l'URL",
+            "placeholder": "https://example.com/path?param=value"
+        }
+    },
+    "sections": {
+        "protocol": "Protocole",
+        "hostname": "Nom d'hôte",
+        "port": "Port",
+        "pathname": "Chemin",
+        "search": "Paramètres",
+        "hash": "Fragment"
+    },
+    "actions": {
+        "parse": "Analyser l'URL",
+        "clear": "Effacer",
+        "copy": "Copier le résultat"
+    },
+    "messages": {
+        "copied": "Copié dans le presse-papier",
+        "invalidUrl": "Format d'URL invalide",
+        "emptyUrl": "Veuillez entrer une URL"
+    }
+}

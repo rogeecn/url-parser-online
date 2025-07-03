@@ -208,5 +208,29 @@
         "name": "繁體中文",
         "displayName": "繁體中文",
         "file": "zh-TW.json"
+    },
+    {
+        "code": "hi",
+        "name": "हिन्दी",
+        "displayName": "हिन्दी",
+        "file": "hi-IN.json"
+    },
+    {
+        "code": "bn",
+        "name": "বাংলা",
+        "displayName": "বাংলা",
+        "file": "bn-BD.json"
+    },
+    {
+        "code": "sw",
+        "name": "Kiswahili",
+        "displayName": "Kiswahili",
+        "file": "sw-KE.json"
+    },
+    {
+        "code": "ta",
+        "name": "தமிழ்",
+        "displayName": "தமிழ்",
+        "file": "ta-IN.json"
     }
 ]

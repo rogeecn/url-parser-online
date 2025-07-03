@@ -1,0 +1,28 @@
+{
+    "title": "מנתח URL מקוון",
+    "description": "כלי מקוון פשוט לניתוח כתובות URL",
+    "inputs": {
+        "url": {
+            "label": "הכנס URL",
+            "placeholder": "https://example.com/path?param=value"
+        }
+    },
+    "sections": {
+        "protocol": "פרוטוקול",
+        "hostname": "שם מארח",
+        "port": "פורט",
+        "pathname": "נתיב",
+        "search": "פרמטרים",
+        "hash": "האש"
+    },
+    "actions": {
+        "parse": "נתח URL",
+        "clear": "נקה",
+        "copy": "העתק תוצאה"
+    },
+    "messages": {
+        "copied": "הועתק ללוח",
+        "invalidUrl": "פורמט URL לא חוקי",
+        "emptyUrl": "אנא הכנס URL"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "title": "URL 解析工具",
+    "description": "一個簡單的線上 URL 解析和分析工具",
+    "inputs": {
+        "url": {
+            "label": "輸入 URL",
+            "placeholder": "https://example.com/path?param=value"
+        }
+    },
+    "sections": {
+        "protocol": "協議",
+        "hostname": "主機名",
+        "port": "端口",
+        "pathname": "路徑",
+        "search": "查詢參數",
+        "hash": "雜湊"
+    },
+    "actions": {
+        "parse": "解析 URL",
+        "clear": "清除",
+        "copy": "複製結果"
+    },
+    "messages": {
+        "copied": "已複製到剪貼簿",
+        "invalidUrl": "URL 格式無效",
+        "emptyUrl": "請輸入 URL"
+    }
+}

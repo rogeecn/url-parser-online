@@ -1,0 +1,28 @@
+{
+    "title": "محلل الروابط عبر الإنترنت",
+    "description": "أداة بسيطة عبر الإنترنت لتحليل الروابط",
+    "inputs": {
+        "url": {
+            "label": "أدخل الرابط",
+            "placeholder": "https://example.com/path?param=value"
+        }
+    },
+    "sections": {
+        "protocol": "البروتوكول",
+        "hostname": "اسم المضيف",
+        "port": "المنفذ",
+        "pathname": "المسار",
+        "search": "معلمات الاستعلام",
+        "hash": "الهاش"
+    },
+    "actions": {
+        "parse": "تحليل الرابط",
+        "clear": "مسح",
+        "copy": "نسخ النتيجة"
+    },
+    "messages": {
+        "copied": "تم النسخ إلى الحافظة",
+        "invalidUrl": "تنسيق رابط غير صالح",
+        "emptyUrl": "الرجاء إدخال الرابط"
+    }
+}

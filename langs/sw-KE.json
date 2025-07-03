@@ -1,0 +1,28 @@
+{
+    "title": "Kichambua URL Mtandaoni",
+    "description": "Chombo rahisi cha mtandaoni cha kuchanganua URL",
+    "inputs": {
+        "url": {
+            "label": "Ingiza URL",
+            "placeholder": "https://example.com/path?param=value"
+        }
+    },
+    "sections": {
+        "protocol": "Itifaki",
+        "hostname": "Jina la seva",
+        "port": "Mlango",
+        "pathname": "Njia",
+        "search": "Vigezo vya utafutaji",
+        "hash": "Hash"
+    },
+    "actions": {
+        "parse": "Changamua URL",
+        "clear": "Futa",
+        "copy": "Nakili matokeo"
+    },
+    "messages": {
+        "copied": "Imenakiliwa kwenye ubao wa kunakili",
+        "invalidUrl": "Muundo batili wa URL",
+        "emptyUrl": "Tafadhali ingiza URL"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "title": "تجزیه‌کننده URL آنلاین",
+    "description": "یک ابزار ساده آنلاین برای تجزیه و تحلیل URLها",
+    "inputs": {
+        "url": {
+            "label": "URL را وارد کنید",
+            "placeholder": "https://example.com/path?param=value"
+        }
+    },
+    "sections": {
+        "protocol": "پروتکل",
+        "hostname": "نام میزبان",
+        "port": "پورت",
+        "pathname": "مسیر",
+        "search": "پارامترهای جستجو",
+        "hash": "هش"
+    },
+    "actions": {
+        "parse": "تجزیه URL",
+        "clear": "پاک کردن",
+        "copy": "کپی نتیجه"
+    },
+    "messages": {
+        "copied": "در کلیپ‌بورد کپی شد",
+        "invalidUrl": "فرمت URL نامعتبر است",
+        "emptyUrl": "لطفاً یک URL وارد کنید"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "title": "URL Parser Online",
+    "description": "Et simpelt online værktøj til at analysere URLs",
+    "inputs": {
+        "url": {
+            "label": "Indtast URL",
+            "placeholder": "https://example.com/path?param=value"
+        }
+    },
+    "sections": {
+        "protocol": "Protokol",
+        "hostname": "Værtsnavn",
+        "port": "Port",
+        "pathname": "Sti",
+        "search": "Forespørgselsparametre",
+        "hash": "Hash"
+    },
+    "actions": {
+        "parse": "Analyser URL",
+        "clear": "Ryd",
+        "copy": "Kopier resultat"
+    },
+    "messages": {
+        "copied": "Kopieret til udklipsholder",
+        "invalidUrl": "Ugyldigt URL-format",
+        "emptyUrl": "Indtast venligst en URL"
+    }
+}

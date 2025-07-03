@@ -1,0 +1,28 @@
+{
+    "title": "Parser URL Online",
+    "description": "Alat online sederhana untuk mengurai URL",
+    "inputs": {
+        "url": {
+            "label": "Masukkan URL",
+            "placeholder": "https://example.com/path?param=value"
+        }
+    },
+    "sections": {
+        "protocol": "Protokol",
+        "hostname": "Nama Host",
+        "port": "Port",
+        "pathname": "Jalur",
+        "search": "Parameter Query",
+        "hash": "Hash"
+    },
+    "actions": {
+        "parse": "Urai URL",
+        "clear": "Bersihkan",
+        "copy": "Salin Hasil"
+    },
+    "messages": {
+        "copied": "Disalin ke clipboard",
+        "invalidUrl": "Format URL tidak valid",
+        "emptyUrl": "Silakan masukkan URL"
+    }
+}

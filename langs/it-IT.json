@@ -1,0 +1,28 @@
+{
+    "title": "Parser URL Online",
+    "description": "Uno strumento online semplice per analizzare gli URL",
+    "inputs": {
+        "url": {
+            "label": "Inserisci URL",
+            "placeholder": "https://example.com/path?param=value"
+        }
+    },
+    "sections": {
+        "protocol": "Protocollo",
+        "hostname": "Nome host",
+        "port": "Porta",
+        "pathname": "Percorso",
+        "search": "Parametri query",
+        "hash": "Hash"
+    },
+    "actions": {
+        "parse": "Analizza URL",
+        "clear": "Cancella",
+        "copy": "Copia risultato"
+    },
+    "messages": {
+        "copied": "Copiato negli appunti",
+        "invalidUrl": "Formato URL non valido",
+        "emptyUrl": "Inserisci un URL"
+    }
+}
