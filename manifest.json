@@ -1,0 +1,7 @@
+{
+    "baseURL": "https://url-parser-online.com",
+    "siteName": "URL Parser Online",
+    "author": "URL Parser Team",
+    "description": "A comprehensive online URL parsing tool with multi-language support",
+    "version": "1.0.0"
+}

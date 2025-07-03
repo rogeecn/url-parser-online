@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Parser Online - URL Analysis Tool</title>
+    <meta name="description" content="A comprehensive online URL parsing tool that provides an intuitive interface to analyze and understand the various components of URLs, while popularizing HTTP-related knowledge.">
+    <meta name="keywords" content="URL parser,URL analysis,HTTP tools,online tools,URL components,query parameters">
+
+    
+    <meta property="og:title" content="URL Parser Online - URL Analysis Tool">
+    <meta property="og:description" content="A comprehensive online URL parsing tool that provides an intuitive interface to analyze and understand the various components of URLs, while popularizing HTTP-related knowledge.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://url-parser-online.com">
+    <meta property="og:site_name" content="URL Parser Online">
+
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="URL Parser Online - URL Analysis Tool">
+    <meta name="twitter:description" content="A comprehensive online URL parsing tool that provides an intuitive interface to analyze and understand the various components of URLs, while popularizing HTTP-related knowledge.">
+
+    
+    
+    <link rel="alternate" hreflang="zh" href="zh.html">
+    
+    <link rel="alternate" hreflang="en" href="en.html">
+    
+
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#eff6ff',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "URL Parser Online - URL Analysis Tool",
+        "description": "A comprehensive online URL parsing tool that provides an intuitive interface to analyze and understand the various components of URLs, while popularizing HTTP-related knowledge.",
+        "url": "https:\/\/url-parser-online.com",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Any",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        }
+    }
+    </script>
+</head>
+<body class="h-full bg-gray-50">
+    <div class="min-h-full flex flex-col">
+        
+        <header class="bg-white shadow-sm border-b border-gray-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center py-4">
+                    <div class="flex items-center space-x-4">
+                        <div>
+                            <h1 class="text-2xl font-bold text-gray-900">URL Parser Online</h1>
+                            <p class="text-sm text-gray-600">Analyze and understand the components of URLs</p>
+                        </div>
+                    </div>
+
+                    
+                    <div class="flex items-center space-x-2">
+                        
+                        <a href="zh.html" class="px-3 py-1 text-sm rounded-md transition-colors text-gray-600 hover:bg-gray-100 hover:text-gray-900">
+                            中文
+                        </a>
+                        
+                        <a href="en.html" class="px-3 py-1 text-sm rounded-md transition-colors bg-primary-100 text-primary-700 font-medium">
+                            English
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        
+        <main class="flex-1">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+                
+                <section class="mb-12">
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+                        
+                        <div class="mb-8">
+                            <h2 class="text-lg font-semibold text-gray-900 mb-4">Enter URL</h2>
+
+                            
+                            <div class="space-y-4">
+                                <div>
+                                    <textarea
+                                        id="urlInput"
+                                        rows="4"
+                                        class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-primary-500 focus:border-primary-500 resize-none"
+                                        placeholder="Enter URLs to parse, supports multiple URLs (one per line)"
+                                    ></textarea>
+                                </div>
+
+                                
+                                <div class="flex flex-wrap gap-3">
+                                    <button id="parseBtn" class="bg-primary-600 text-white px-4 py-2 rounded-md hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2">
+                                        Parse
+                                    </button>
+                                    <button id="clearBtn" class="bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2">
+                                        Clear
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="border-t border-gray-200 pt-8">
+                            <h2 class="text-lg font-semibold text-gray-900 mb-4">Parse Result</h2>
+
+                            
+                            <div id="parseStatus" class="hidden mb-4"></div>
+
+                            
+                            <div id="parseResults" class="space-y-4">
+                                <div class="text-center text-gray-500 py-8">
+                                    Please enter a URL to parse
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                
+                <section class="mb-12">
+                    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+                        <div class="flex justify-between items-center mb-6">
+                            <h2 class="text-lg font-semibold text-gray-900">History</h2>
+                            <div class="flex space-x-3">
+                                <button id="clearHistory" class="text-sm bg-red-600 text-white px-3 py-1 rounded-md hover:bg-red-700">
+                                    Clear All
+                                </button>
+                            </div>
+                        </div>
+
+                        <div id="historyList" class="space-y-3">
+                            <div class="text-center text-gray-500 py-8">
+                                No history records
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                
+                <section>
+                    <div class="mb-6">
+                        <h2 class="text-2xl font-semibold text-gray-900 mb-2">HTTP Fundamentals</h2>
+                        <p class="text-gray-600">Learn about HTTP protocols, URL structure, and basic web technologies</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">URL Structure Explained</h3>
+                            <p class="text-sm text-gray-600">Understanding the components of URLs and their functions</p>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">Protocol Introduction</h3>
+                            <p class="text-sm text-gray-600">HTTP vs HTTPS security comparison and other protocols</p>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">HTTP Status Codes</h3>
+                            <p class="text-sm text-gray-600">Common HTTP status codes and their meanings</p>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">HTTP Request Methods</h3>
+                            <p class="text-sm text-gray-600">Detailed explanation of GET, POST, PUT, DELETE and other methods</p>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">HTTP Headers</h3>
+                            <p class="text-sm text-gray-600">Common HTTP header fields and their purposes</p>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">Caching Mechanisms</h3>
+                            <p class="text-sm text-gray-600">Browser caching strategies and cache control</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        
+        <footer class="bg-white border-t border-gray-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+                <div class="flex justify-between items-center text-sm text-gray-600">
+                    <p>© 2024 URL Parser Online. All rights reserved.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-gray-900">Open Source</a>
+                        <a href="#" class="hover:text-gray-900">Feedback</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        
+        const I18N = {
+            "error": {
+                "invalidUrl": "Please enter a valid URL"
+            },
+            "result": {
+                "empty": "Please enter a URL to parse",
+                "protocol": "Protocol",
+                "userInfo": "User Info",
+                "host": "Host",
+                "port": "Port",
+                "path": "Path",
+                "query": "Query Parameters",
+                "fragment": "Fragment",
+                "copyButton": "Copy",
+                "copySuccess": "Copied to clipboard"
+            },
+            "history": {
+                "empty": "No history records",
+                "parseAgain": "Parse Again",
+                "delete": "Delete"
+            }
+        };
+        let urlHistory = JSON.parse(localStorage.getItem('urlHistory') || '[]');
+
+        
+        const urlInput = document.getElementById('urlInput');
+        const parseBtn = document.getElementById('parseBtn');
+        const clearBtn = document.getElementById('clearBtn');
+        const parseResults = document.getElementById('parseResults');
+        const parseStatus = document.getElementById('parseStatus');
+        const historyList = document.getElementById('historyList');
+
+        
+        function parseURL(urlString) {
+            try {
+                
+                const urls = urlString.split('\n').filter(url => url.trim());
+                const results = [];
+
+                for (const url of urls) {
+                    const trimmedUrl = url.trim();
+                    if (!trimmedUrl) continue;
+
+                    try {
+                        const urlObj = new URL(trimmedUrl);
+                        const parsed = {
+                            original: trimmedUrl,
+                            protocol: urlObj.protocol,
+                            userInfo: urlObj.username ? `${urlObj.username}${urlObj.password ? ':' + urlObj.password : ''}` : '',
+                            host: urlObj.hostname,
+                            port: urlObj.port || getDefaultPort(urlObj.protocol),
+                            path: urlObj.pathname,
+                            query: urlObj.search,
+                            fragment: urlObj.hash,
+                            isValid: true
+                        };
+                        results.push(parsed);
+
+                        
+                        saveToHistory(parsed);
+                    } catch (e) {
+                        results.push({
+                            original: trimmedUrl,
+                            isValid: false,
+                            error: I18N.error.invalidUrl
+                        });
+                    }
+                }
+
+                return results;
+            } catch (e) {
+                return [{
+                    original: urlString,
+                    isValid: false,
+                    error: I18N.error.invalidUrl
+                }];
+            }
+        }
+
+        function getDefaultPort(protocol) {
+            const defaults = {
+                'http:': '80',
+                'https:': '443',
+                'ftp:': '21',
+                'ftps:': '990'
+            };
+            return defaults[protocol] || '';
+        }
+
+        function renderParseResults(results) {
+            if (!results || results.length === 0) {
+                parseResults.innerHTML = `<div class="text-center text-gray-500 py-8">${I18N.result.empty}</div>`;
+                return;
+            }
+
+            
+            const validResults = results.filter(result => result.isValid);
+            const invalidResults = results.filter(result => !result.isValid);
+
+            let html = '';
+
+            
+            if (invalidResults.length > 0) {
+                html += '<div class="mb-6">';
+                invalidResults.forEach(result => {
+                    html += `
+                        <div class="border border-red-200 rounded-md p-4 bg-red-50 mb-3">
+                            <div class="text-sm text-red-600">${result.error}</div>
+                            <div class="text-xs text-gray-500 mt-1">${result.original}</div>
+                        </div>
+                    `;
+                });
+                html += '</div>';
+            }
+
+            
+            if (validResults.length > 0) {
+                html += '<div class="overflow-x-auto">';
+                html += '<table class="min-w-full divide-y divide-gray-200 border border-gray-200 rounded-lg">';
+
+                
+                html += '<thead class="bg-gray-50">';
+                html += '<tr>';
+                html += '<th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider border-r border-gray-200">Component</th>';
+
+                validResults.forEach((result, index) => {
+                    html += `<th class="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider ${index < validResults.length - 1 ? 'border-r border-gray-200' : ''}">`;
+                    html += `<div class="flex items-center justify-between">`;
+                    html += `<span>URL ${index + 1}</span>`;
+                    html += `<button onclick="copyToClipboard('${result.original.replace(/'/g, "\\'")}', this)" class="ml-2 text-xs bg-primary-100 text-primary-700 px-2 py-1 rounded hover:bg-primary-200">${I18N.result.copyButton}</button>`;
+                    html += `</div>`;
+                    html += `<div class="text-xs font-normal text-gray-700 mt-1 truncate" title="${result.original}">${result.original}</div>`;
+                    html += '</th>';
+                });
+                html += '</tr>';
+                html += '</thead>';
+
+                
+                html += '<tbody class="bg-white divide-y divide-gray-200">';
+
+                
+                const rows = [
+                    { key: 'protocol', label: I18N.result.protocol },
+                    { key: 'userInfo', label: I18N.result.userInfo },
+                    { key: 'host', label: I18N.result.host },
+                    { key: 'port', label: I18N.result.port },
+                    { key: 'path', label: I18N.result.path },
+                    { key: 'query', label: I18N.result.query },
+                    { key: 'fragment', label: I18N.result.fragment }
+                ];
+
+                rows.forEach((row, rowIndex) => {
+                    
+                    const hasValues = validResults.some(result => {
+                        if (row.key === 'query') {
+                            return result[row.key] && result[row.key] !== '';
+                        }
+                        return result[row.key] && result[row.key] !== '';
+                    });
+
+                    if (!hasValues && row.key !== 'protocol' && row.key !== 'host' && row.key !== 'path') {
+                        return; 
+                    }
+
+                    html += `<tr class="${rowIndex % 2 === 0 ? 'bg-white' : 'bg-gray-50'}">`;
+                    html += `<td class="px-4 py-3 text-sm font-medium text-gray-900 border-r border-gray-200">${row.label}</td>`;
+
+                    validResults.forEach((result, index) => {
+                        html += `<td class="px-4 py-3 text-sm text-gray-700 ${index < validResults.length - 1 ? 'border-r border-gray-200' : ''}">`;
+
+                        if (row.key === 'query' && result[row.key]) {
+                            
+                            const queryString = result[row.key].substring(1); 
+                            if (queryString) {
+                                const params = new URLSearchParams(queryString);
+                                const paramArray = Array.from(params.entries());
+                                if (paramArray.length > 0) {
+                                    html += '<div class="space-y-1">';
+                                    paramArray.forEach(([key, value]) => {
+                                        html += `<div class="text-xs"><span class="font-medium">${key}:</span> ${value}</div>`;
+                                    });
+                                    html += '</div>';
+                                } else {
+                                    html += '<span class="text-gray-400">-</span>';
+                                }
+                            } else {
+                                html += '<span class="text-gray-400">-</span>';
+                            }
+                        } else {
+                            const value = result[row.key];
+                            if (value && value !== '') {
+                                html += `<span class="break-all">${value}</span>`;
+                            } else {
+                                html += '<span class="text-gray-400">-</span>';
+                            }
+                        }
+
+                        html += '</td>';
+                    });
+                    html += '</tr>';
+                });
+
+                html += '</tbody>';
+                html += '</table>';
+                html += '</div>';
+            }
+
+            parseResults.innerHTML = html;
+        }
+
+        
+        function saveToHistory(parsedUrl) {
+            const historyItem = {
+                ...parsedUrl,
+                timestamp: Date.now(),
+                id: Math.random().toString(36).substr(2, 9)
+            };
+
+            
+            urlHistory = urlHistory.filter(item => item.original !== parsedUrl.original);
+
+            
+            urlHistory.unshift(historyItem);
+
+            
+            if (urlHistory.length > 50) {
+                urlHistory = urlHistory.slice(0, 50);
+            }
+
+            localStorage.setItem('urlHistory', JSON.stringify(urlHistory));
+        }
+
+        function renderHistory() {
+            if (urlHistory.length === 0) {
+                historyList.innerHTML = `<div class="text-center text-gray-500 py-8">${I18N.history.empty}</div>`;
+                return;
+            }
+
+            const html = urlHistory.map(item => `
+                <div class="border border-gray-200 rounded-md p-4 hover:bg-gray-50">
+                    <div class="flex items-center justify-between">
+                        <div class="flex-1">
+                            <div class="text-sm font-medium text-gray-900 truncate">${item.original}</div>
+                            <div class="text-xs text-gray-500">${new Date(item.timestamp).toLocaleString()}</div>
+                        </div>
+                        <div class="flex items-center space-x-2 ml-4">
+                            <button onclick="loadFromHistory('${item.id}')"
+                                    class="text-xs bg-primary-100 text-primary-700 px-2 py-1 rounded hover:bg-primary-200">
+                                ${I18N.history.parseAgain}
+                            </button>
+                            <button onclick="removeFromHistory('${item.id}')"
+                                    class="text-xs bg-red-100 text-red-700 px-2 py-1 rounded hover:bg-red-200">
+                                ${I18N.history.delete}
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+
+            historyList.innerHTML = html;
+        }
+
+        function loadFromHistory(id) {
+            const item = urlHistory.find(h => h.id === id);
+            if (item) {
+                urlInput.value = item.original;
+                parseBtn.click();
+            }
+        }
+
+        function removeFromHistory(id) {
+            urlHistory = urlHistory.filter(h => h.id !== id);
+            localStorage.setItem('urlHistory', JSON.stringify(urlHistory));
+            renderHistory();
+        }
+
+        function clearAllHistory() {
+            if (confirm('Are you sure you want to clear all history?')) {
+                urlHistory = [];
+                localStorage.setItem('urlHistory', JSON.stringify(urlHistory));
+                renderHistory();
+            }
+        }
+
+        
+        function copyToClipboard(text, button) {
+            navigator.clipboard.writeText(text).then(() => {
+                const originalText = button.textContent;
+                button.textContent = I18N.result.copySuccess;
+                button.classList.remove('bg-primary-100', 'text-primary-700');
+                button.classList.add('bg-green-100', 'text-green-700');
+
+                setTimeout(() => {
+                    button.textContent = originalText;
+                    button.classList.remove('bg-green-100', 'text-green-700');
+                    button.classList.add('bg-primary-100', 'text-primary-700');
+                }, 2000);
+            });
+        }
+
+        function showStatus(message, type = 'info') {
+            const colors = {
+                success: 'bg-green-50 border-green-200 text-green-800',
+                warning: 'bg-yellow-50 border-yellow-200 text-yellow-800',
+                error: 'bg-red-50 border-red-200 text-red-800',
+                info: 'bg-blue-50 border-blue-200 text-blue-800'
+            };
+
+            parseStatus.className = `p-3 rounded-md border ${colors[type]}`;
+            parseStatus.textContent = message;
+            parseStatus.classList.remove('hidden');
+
+            setTimeout(() => {
+                parseStatus.classList.add('hidden');
+            }, 5000);
+        }
+
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            parseBtn.addEventListener('click', () => {
+                const urlText = urlInput.value.trim();
+                if (!urlText) {
+                    showStatus(I18N.result.empty, 'warning');
+                    return;
+                }
+
+                const results = parseURL(urlText);
+                renderParseResults(results);
+            });
+
+            
+            clearBtn.addEventListener('click', () => {
+                urlInput.value = '';
+                parseResults.innerHTML = `<div class="text-center text-gray-500 py-8">${I18N.result.empty}</div>`;
+                parseStatus.classList.add('hidden');
+            });
+
+            
+            document.getElementById('clearHistory').addEventListener('click', clearAllHistory);
+
+            
+            renderHistory();
+        });
+    </script>
+</body>
+</html>

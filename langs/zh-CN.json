@@ -1,0 +1,108 @@
+{
+    "title": "URL Parser Online - 在线 URL 解析工具",
+    "description": "功能完善的在线 URL 解析工具，提供直观的界面来分析和理解 URL 的各个组成部分，同时普及 HTTP 相关知识。",
+    "keywords": "URL解析,URL分析,HTTP工具,在线工具,网址解析,URL组件,查询参数",
+    "header": {
+        "title": "URL Parser Online",
+        "subtitle": "在线 URL 解析工具",
+        "description": "分析和理解 URL 的各个组成部分"
+    },
+    "nav": {
+        "parser": "URL 解析",
+        "history": "历史记录",
+        "compare": "对比分析",
+        "knowledge": "HTTP 知识",
+        "language": "语言"
+    },
+    "parser": {
+        "title": "URL 解析",
+        "inputLabel": "输入 URL",
+        "inputPlaceholder": "输入要解析的 URL，支持多个URL（每行一个）",
+        "parseButton": "解析",
+        "clearButton": "清空",
+        "exampleUrls": "示例 URL",
+        "batchMode": "批量模式",
+        "privacyMode": "隐私模式",
+        "privacyModeHelp": "启用后不会保存包含敏感信息的 URL 到历史记录"
+    },
+    "result": {
+        "title": "解析结果",
+        "protocol": "协议",
+        "userInfo": "用户信息",
+        "host": "主机",
+        "port": "端口",
+        "path": "路径",
+        "query": "查询参数",
+        "fragment": "片段标识符",
+        "copyButton": "复制",
+        "copySuccess": "已复制到剪贴板",
+        "invalid": "无效的 URL",
+        "empty": "请输入要解析的 URL"
+    },
+    "history": {
+        "title": "历史记录",
+        "empty": "暂无历史记录",
+        "clearAll": "清空全部",
+        "parseAgain": "再次解析",
+        "delete": "删除"
+    },
+    "compare": {
+        "title": "URL 对比分析",
+        "selectUrls": "选择要对比的 URL（最多3个）",
+        "compareButton": "开始对比",
+        "clearCompare": "清空对比",
+        "differences": "差异分析",
+        "similarities": "相同部分",
+        "exportReport": "导出报告",
+        "noUrls": "请选择至少2个URL进行对比",
+        "maxUrls": "最多只能选择3个URL进行对比"
+    },
+    "knowledge": {
+        "title": "HTTP 基础知识",
+        "description": "了解 HTTP 协议、URL 结构和 Web 技术的基础知识",
+        "urlStructure": {
+            "title": "URL 结构详解",
+            "description": "了解 URL 的各个组成部分及其作用"
+        },
+        "protocols": {
+            "title": "协议介绍",
+            "description": "HTTP vs HTTPS 安全性对比及其他协议"
+        },
+        "statusCodes": {
+            "title": "HTTP 状态码",
+            "description": "常见 HTTP 状态码含义和用途"
+        },
+        "methods": {
+            "title": "HTTP 请求方法",
+            "description": "GET, POST, PUT, DELETE 等请求方法详解"
+        },
+        "headers": {
+            "title": "HTTP 头部字段",
+            "description": "常用 HTTP 头部字段的含义和作用"
+        },
+        "cache": {
+            "title": "缓存机制",
+            "description": "浏览器缓存策略和缓存控制"
+        }
+    },
+    "examples": {
+        "basic": "https://www.example.com",
+        "withPath": "https://www.example.com/path/to/resource",
+        "withQuery": "https://www.example.com/search?q=keyword&page=1",
+        "withFragment": "https://www.example.com/page#section",
+        "withPort": "https://www.example.com:8080/api",
+        "withAuth": "https://user:pass@www.example.com/secure",
+        "ftp": "ftp://files.example.com/directory/file.txt",
+        "mailto": "mailto:someone@example.com?subject=Hello"
+    },
+    "error": {
+        "invalidUrl": "请输入有效的 URL",
+        "networkError": "网络错误，请稍后重试",
+        "storageError": "本地存储错误"
+    },
+    "footer": {
+        "copyright": "© 2024 URL Parser Online. 保留所有权利。",
+        "openSource": "开源项目",
+        "feedback": "反馈建议"
+    }
+}

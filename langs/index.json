@@ -1,0 +1,14 @@
+[
+    {
+        "code": "zh",
+        "name": "中文",
+        "displayName": "中文",
+        "file": "zh-CN.json"
+    },
+    {
+        "code": "en",
+        "name": "English",
+        "displayName": "English",
+        "file": "en-US.json"
+    }
+]
