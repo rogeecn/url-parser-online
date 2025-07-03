@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html lang="zh" class="h-full">
+<html lang="de" class="h-full">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>URL Parser Online - 在线 URL 解析工具</title>
-    <meta name="description" content="功能完善的在线 URL 解析工具，提供直观的界面来分析和理解 URL 的各个组成部分，同时普及 HTTP 相关知识。">
-    <meta name="keywords" content="URL解析,URL分析,HTTP工具,在线工具,网址解析,URL组件,查询参数">
+    <title>URL Parser Online - URL Analysis Tool</title>
+    <meta name="description" content="A comprehensive online URL parsing tool that provides an intuitive interface to analyze and understand the various components of URLs, while popularizing HTTP-related knowledge.">
+    <meta name="keywords" content="URL parser,URL analysis,HTTP tools,online tools,URL components,query parameters">
 
     
-    <meta property="og:title" content="URL Parser Online - 在线 URL 解析工具">
-    <meta property="og:description" content="功能完善的在线 URL 解析工具，提供直观的界面来分析和理解 URL 的各个组成部分，同时普及 HTTP 相关知识。">
+    <meta property="og:title" content="URL Parser Online - URL Analysis Tool">
+    <meta property="og:description" content="A comprehensive online URL parsing tool that provides an intuitive interface to analyze and understand the various components of URLs, while popularizing HTTP-related knowledge.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://url-parser-online.ipao.vip">
     <meta property="og:site_name" content="URL Parser Online">
 
     
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="URL Parser Online - 在线 URL 解析工具">
-    <meta name="twitter:description" content="功能完善的在线 URL 解析工具，提供直观的界面来分析和理解 URL 的各个组成部分，同时普及 HTTP 相关知识。">
+    <meta name="twitter:title" content="URL Parser Online - URL Analysis Tool">
+    <meta name="twitter:description" content="A comprehensive online URL parsing tool that provides an intuitive interface to analyze and understand the various components of URLs, while popularizing HTTP-related knowledge.">
 
     
     
@@ -107,8 +107,8 @@
     {
         "@context": "https://schema.org",
         "@type": "WebApplication",
-        "name": "URL Parser Online - 在线 URL 解析工具",
-        "description": "功能完善的在线 URL 解析工具，提供直观的界面来分析和理解 URL 的各个组成部分，同时普及 HTTP 相关知识。",
+        "name": "URL Parser Online - URL Analysis Tool",
+        "description": "A comprehensive online URL parsing tool that provides an intuitive interface to analyze and understand the various components of URLs, while popularizing HTTP-related knowledge.",
         "url": "https:\/\/url-parser-online.ipao.vip",
         "applicationCategory": "DeveloperApplication",
         "operatingSystem": "Any",
@@ -129,7 +129,7 @@
                     <div class="flex items-center space-x-4">
                         <div>
                             <h1 class="text-2xl font-bold text-gray-900">URL Parser Online</h1>
-                            <p class="text-sm text-gray-600">分析和理解 URL 的各个组成部分</p>
+                            <p class="text-sm text-gray-600">Analyze and understand the components of URLs</p>
                         </div>
                     </div>
 
@@ -180,7 +180,7 @@
                                 
                             
                                 
-                            
+                                    <span>Deutsch</span>
                                 
                             
                                 
@@ -204,7 +204,7 @@
                                 
                             
                                 
-                                    <span>简体中文</span>
+                            
                                 
                             
                                 
@@ -309,7 +309,7 @@
                                         繁體中文
                                     </a>
                                     
-                                    <a href="de.html" class="px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 text-center rounded-md transition duration-150 ease-in-out ">
+                                    <a href="de.html" class="px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 text-center rounded-md transition duration-150 ease-in-out bg-primary-50 text-primary-700 font-medium hover:bg-primary-100">
                                         Deutsch
                                     </a>
                                     
@@ -357,7 +357,7 @@
                                         Bahasa Indonesia
                                     </a>
                                     
-                                    <a href="zh.html" class="px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 text-center rounded-md transition duration-150 ease-in-out bg-primary-50 text-primary-700 font-medium hover:bg-primary-100">
+                                    <a href="zh.html" class="px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 text-center rounded-md transition duration-150 ease-in-out ">
                                         简体中文
                                     </a>
                                     
@@ -397,7 +397,7 @@
                     <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
                         
                         <div class="mb-8">
-                            <h2 class="text-lg font-semibold text-gray-900 mb-4">输入 URL</h2>
+                            <h2 class="text-lg font-semibold text-gray-900 mb-4">Enter URL</h2>
 
                             
                             <div class="space-y-4">
@@ -406,17 +406,17 @@
                                         id="urlInput"
                                         rows="4"
                                         class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-primary-500 focus:border-primary-500 resize-none"
-                                        placeholder="输入要解析的 URL，支持多个URL（每行一个）"
+                                        placeholder="Enter URLs to parse, supports multiple URLs (one per line)"
                                     ></textarea>
                                 </div>
 
                                 
                                 <div class="flex flex-wrap gap-3">
                                     <button id="parseBtn" class="bg-primary-600 text-white px-4 py-2 rounded-md hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2">
-                                        解析
+                                        Parse
                                     </button>
                                     <button id="clearBtn" class="bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2">
-                                        清空
+                                        Clear
                                     </button>
                                 </div>
                             </div>
@@ -424,7 +424,7 @@
 
                         
                         <div class="border-t border-gray-200 pt-8">
-                            <h2 class="text-lg font-semibold text-gray-900 mb-4">解析结果</h2>
+                            <h2 class="text-lg font-semibold text-gray-900 mb-4">Parse Result</h2>
 
                             
                             <div id="parseStatus" class="hidden mb-4"></div>
@@ -432,7 +432,7 @@
                             
                             <div id="parseResults" class="space-y-4">
                                 <div class="text-center text-gray-500 py-8">
-                                    请输入要解析的 URL
+                                    Please enter a URL to parse
                                 </div>
                             </div>
                         </div>
@@ -443,17 +443,17 @@
                 <section class="mb-12">
                     <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
                         <div class="flex justify-between items-center mb-6">
-                            <h2 class="text-lg font-semibold text-gray-900">历史记录</h2>
+                            <h2 class="text-lg font-semibold text-gray-900">History</h2>
                             <div class="flex space-x-3">
                                 <button id="clearHistory" class="text-sm bg-red-600 text-white px-3 py-1 rounded-md hover:bg-red-700">
-                                    清空全部
+                                    Clear All
                                 </button>
                             </div>
                         </div>
 
                         <div id="historyList" class="space-y-3">
                             <div class="text-center text-gray-500 py-8">
-                                暂无历史记录
+                                No history records
                             </div>
                         </div>
                     </div>
@@ -462,13 +462,13 @@
                 
                 <section>
                     <div class="mb-6">
-                        <h2 class="text-2xl font-semibold text-gray-900 mb-2">URL 结构科普</h2>
-                        <p class="text-gray-600">深入了解 URL 的各个组成部分，掌握统一资源定位符的构成原理</p>
+                        <h2 class="text-2xl font-semibold text-gray-900 mb-2">URL Structure Guide</h2>
+                        <p class="text-gray-600">Learn about URL components and understand the anatomy of Uniform Resource Locators</p>
                     </div>
                     
                     <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 mb-6">
-                        <h3 class="text-lg font-semibold text-gray-900 mb-4">URL 完整结构</h3>
-                        <p class="text-sm text-gray-600 mb-4">统一资源定位符的完整语法结构和各部分含义</p>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-4">Complete URL Structure</h3>
+                        <p class="text-sm text-gray-600 mb-4">The complete syntax structure of URLs and meaning of each component</p>
                         <code class="block text-sm bg-gray-100 text-gray-800 p-3 rounded overflow-x-auto">scheme://[userinfo@]host[:port][/path][?query][#fragment]</code>
                     </div>
                     
@@ -491,14 +491,14 @@
                                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
                                                 </svg>
                                             </div>
-                                            <span class="text-sm font-medium text-gray-900">协议方案 (Scheme)</span>
+                                            <span class="text-sm font-medium text-gray-900">Scheme (Protocol)</span>
                                         </div>
                                     </td>
                                     <td class="px-6 py-4">
-                                        <p class="text-sm text-gray-600">定义访问资源的协议类型，如 http、https、ftp、mailto 等</p>
+                                        <p class="text-sm text-gray-600">Defines the protocol used to access the resource, such as http, https, ftp, mailto</p>
                                     </td>
                                     <td class="px-6 py-4">
-                                        <p class="text-sm text-gray-500">常见：http(80)、https(443)、ftp(21)、ws(80)、wss(443)</p>
+                                        <p class="text-sm text-gray-500">Common: http(80), https(443), ftp(21), ws(80), wss(443)</p>
                                     </td>
                                 </tr>
 
@@ -511,14 +511,14 @@
                                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
                                                 </svg>
                                             </div>
-                                            <span class="text-sm font-medium text-gray-900">权限部分 (Authority)</span>
+                                            <span class="text-sm font-medium text-gray-900">Authority Component</span>
                                         </div>
                                     </td>
                                     <td class="px-6 py-4">
-                                        <p class="text-sm text-gray-600">包含用户信息、主机名和端口号的权限标识部分</p>
+                                        <p class="text-sm text-gray-600">Contains user info, hostname, and port number for resource identification</p>
                                     </td>
                                     <td class="px-6 py-4">
-                                        <p class="text-sm text-gray-500">格式：[userinfo@]host[:port]，如 user:pass@example.com:8080</p>
+                                        <p class="text-sm text-gray-500">Format: [userinfo@]host[:port], e.g., user:pass@example.com:8080</p>
                                     </td>
                                 </tr>
 
@@ -531,14 +531,14 @@
                                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"></path>
                                                 </svg>
                                             </div>
-                                            <span class="text-sm font-medium text-gray-900">主机名 (Host)</span>
+                                            <span class="text-sm font-medium text-gray-900">Host (Domain/IP)</span>
                                         </div>
                                     </td>
                                     <td class="px-6 py-4">
-                                        <p class="text-sm text-gray-600">标识服务器的域名或IP地址，是URL中最重要的部分</p>
+                                        <p class="text-sm text-gray-600">Identifies the server by domain name or IP address, the most critical URL part</p>
                                     </td>
                                     <td class="px-6 py-4">
-                                        <p class="text-sm text-gray-500">可以是域名(example.com)、IPv4(192.168.1.1)或IPv6([::1])</p>
+                                        <p class="text-sm text-gray-500">Can be domain(example.com), IPv4(192.168.1.1) or IPv6([::1])</p>
                                     </td>
                                 </tr>
 
@@ -551,14 +551,14 @@
                                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
                                                 </svg>
                                             </div>
-                                            <span class="text-sm font-medium text-gray-900">端口号 (Port)</span>
+                                            <span class="text-sm font-medium text-gray-900">Port Number</span>
                                         </div>
                                     </td>
                                     <td class="px-6 py-4">
-                                        <p class="text-sm text-gray-600">指定服务器上的特定服务端口，省略时使用协议默认端口</p>
+                                        <p class="text-sm text-gray-600">Specifies the service port on the server, uses protocol default when omitted</p>
                                     </td>
                                     <td class="px-6 py-4">
-                                        <p class="text-sm text-gray-500">范围：1-65535，常见默认端口：80(HTTP)、443(HTTPS)、21(FTP)</p>
+                                        <p class="text-sm text-gray-500">Range: 1-65535, common defaults: 80(HTTP), 443(HTTPS), 21(FTP)</p>
                                     </td>
                                 </tr>
 
@@ -571,14 +571,14 @@
                                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2 2z"></path>
                                                 </svg>
                                             </div>
-                                            <span class="text-sm font-medium text-gray-900">路径 (Path)</span>
+                                            <span class="text-sm font-medium text-gray-900">Path Component</span>
                                         </div>
                                     </td>
                                     <td class="px-6 py-4">
-                                        <p class="text-sm text-gray-600">指定服务器上资源的具体位置，类似文件系统路径</p>
+                                        <p class="text-sm text-gray-600">Specifies the exact location of resource on server, similar to filesystem path</p>
                                     </td>
                                     <td class="px-6 py-4">
-                                        <p class="text-sm text-gray-500">以/分隔的层级结构，如：/docs/guide/installation.html</p>
+                                        <p class="text-sm text-gray-500">Hierarchical structure with / separators: /docs/guide/installation.html</p>
                                     </td>
                                 </tr>
 
@@ -591,14 +591,14 @@
                                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                                 </svg>
                                             </div>
-                                            <span class="text-sm font-medium text-gray-900">查询参数 (Query)</span>
+                                            <span class="text-sm font-medium text-gray-900">Query Parameters</span>
                                         </div>
                                     </td>
                                     <td class="px-6 py-4">
-                                        <p class="text-sm text-gray-600">以?开头的键值对参数，用于传递额外信息给服务器</p>
+                                        <p class="text-sm text-gray-600">Key-value pairs starting with ? to pass additional information to server</p>
                                     </td>
                                     <td class="px-6 py-4">
-                                        <p class="text-sm text-gray-500">格式：?key1=value1&amp;key2=value2，需要URL编码特殊字符</p>
+                                        <p class="text-sm text-gray-500">Format: ?key1=value1&amp;key2=value2, special characters need URL encoding</p>
                                     </td>
                                 </tr>
 
@@ -611,14 +611,14 @@
                                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"></path>
                                                 </svg>
                                             </div>
-                                            <span class="text-sm font-medium text-gray-900">片段标识符 (Fragment)</span>
+                                            <span class="text-sm font-medium text-gray-900">Fragment Identifier</span>
                                         </div>
                                     </td>
                                     <td class="px-6 py-4">
-                                        <p class="text-sm text-gray-600">以#开头的页面内定位标识，通常指向页面的特定部分</p>
+                                        <p class="text-sm text-gray-600">Starting with # for in-page navigation, typically points to specific page sections</p>
                                     </td>
                                     <td class="px-6 py-4">
-                                        <p class="text-sm text-gray-500">仅在客户端使用，不会发送到服务器，如：#section1</p>
+                                        <p class="text-sm text-gray-500">Client-side only, not sent to server, e.g., #section1</p>
                                     </td>
                                 </tr>
 
@@ -631,14 +631,14 @@
                                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
                                                 </svg>
                                             </div>
-                                            <span class="text-sm font-medium text-gray-900">用户信息 (UserInfo)</span>
+                                            <span class="text-sm font-medium text-gray-900">User Information</span>
                                         </div>
                                     </td>
                                     <td class="px-6 py-4">
-                                        <p class="text-sm text-gray-600">包含用户名和密码的认证信息，现代应用中已较少使用</p>
+                                        <p class="text-sm text-gray-600">Contains username and password for authentication, rarely used in modern apps</p>
                                     </td>
                                     <td class="px-6 py-4">
-                                        <p class="text-sm text-gray-500">格式：username:password@，出于安全考虑不推荐在URL中暴露</p>
+                                        <p class="text-sm text-gray-500">Format: username:password@, not recommended due to security concerns</p>
                                     </td>
                                 </tr>
 
@@ -651,14 +651,14 @@
                                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
                                                 </svg>
                                             </div>
-                                            <span class="text-sm font-medium text-gray-900">URL 编码规则</span>
+                                            <span class="text-sm font-medium text-gray-900">URL Encoding Rules</span>
                                         </div>
                                     </td>
                                     <td class="px-6 py-4">
-                                        <p class="text-sm text-gray-600">特殊字符需要进行百分号编码，确保URL的正确传输</p>
+                                        <p class="text-sm text-gray-600">Special characters must be percent-encoded to ensure proper URL transmission</p>
                                     </td>
                                     <td class="px-6 py-4">
-                                        <p class="text-sm text-gray-500">空格→%20，中文→UTF-8编码，保留字符需要编码如?→%3F</p>
+                                        <p class="text-sm text-gray-500">Space→%20, Chinese→UTF-8 encoding, reserved chars like ?→%3F</p>
                                     </td>
                                 </tr>
 
@@ -671,14 +671,14 @@
                                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16l-4-4m0 0l4-4m-4 4h18M13 8l4-4m0 0l-4-4m4 4H3"></path>
                                                 </svg>
                                             </div>
-                                            <span class="text-sm font-medium text-gray-900">相对 URL</span>
+                                            <span class="text-sm font-medium text-gray-900">Relative URLs</span>
                                         </div>
                                     </td>
                                     <td class="px-6 py-4">
-                                        <p class="text-sm text-gray-600">基于当前页面位置的相对路径引用，简化URL书写</p>
+                                        <p class="text-sm text-gray-600">Path references based on current page location, simplifying URL writing</p>
                                     </td>
                                     <td class="px-6 py-4">
-                                        <p class="text-sm text-gray-500">./同级、../上级、/根路径、//协议相对、?仅查询参数</p>
+                                        <p class="text-sm text-gray-500">./same level, ../parent, /root path, //protocol relative, ?query only</p>
                                     </td>
                                 </tr>
 
@@ -691,14 +691,14 @@
                                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
                                                 </svg>
                                             </div>
-                                            <span class="text-sm font-medium text-gray-900">URL 标准规范</span>
+                                            <span class="text-sm font-medium text-gray-900">URL Standards</span>
                                         </div>
                                     </td>
                                     <td class="px-6 py-4">
-                                        <p class="text-sm text-gray-600">遵循RFC 3986等国际标准，确保URL的统一性和兼容性</p>
+                                        <p class="text-sm text-gray-600">Follows RFC 3986 and other international standards for URL uniformity and compatibility</p>
                                     </td>
                                     <td class="px-6 py-4">
-                                        <p class="text-sm text-gray-500">最大长度通常限制在2048字符，支持国际化域名(IDN)</p>
+                                        <p class="text-sm text-gray-500">Max length typically limited to 2048 chars, supports internationalized domain names</p>
                                     </td>
                                 </tr>
                             </tbody>
@@ -714,24 +714,24 @@
         
         const I18N = {
             "error": {
-                "invalidUrl": "请输入有效的 URL"
+                "invalidUrl": "Please enter a valid URL"
             },
             "result": {
-                "empty": "请输入要解析的 URL",
-                "protocol": "协议",
-                "userInfo": "用户信息",
-                "host": "主机",
-                "port": "端口",
-                "path": "路径",
-                "query": "查询参数",
-                "fragment": "片段标识符",
-                "copyButton": "复制",
-                "copySuccess": "已复制到剪贴板"
+                "empty": "Please enter a URL to parse",
+                "protocol": "Protocol",
+                "userInfo": "User Info",
+                "host": "Host",
+                "port": "Port",
+                "path": "Path",
+                "query": "Query Parameters",
+                "fragment": "Fragment",
+                "copyButton": "Copy",
+                "copySuccess": "Copied to clipboard"
             },
             "history": {
-                "empty": "暂无历史记录",
-                "parseAgain": "再次解析",
-                "delete": "删除"
+                "empty": "No history records",
+                "parseAgain": "Parse Again",
+                "delete": "Delete"
             }
         };
         let urlHistory = JSON.parse(localStorage.getItem('urlHistory') || '[]');
