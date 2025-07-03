@@ -9,3 +9,4 @@ all:
 	npm run build
 	rm -rf docs
 	mv outputs docs
+	echo "url-parser-online.ipao.vip" > docs/CNAME
