@@ -58,12 +58,28 @@
                     </div>
 
                     <!-- Language Switcher -->
-                    <div class="flex items-center space-x-2">
-                        {{range .LangLinks}}
-                        <a href="{{.URL}}" class="px-3 py-1 text-sm rounded-md transition-colors {{if .Current}}bg-primary-100 text-primary-700 font-medium{{else}}text-gray-600 hover:bg-gray-100 hover:text-gray-900{{end}}">
-                            {{.DisplayName}}
-                        </a>
-                        {{end}}
+                    <div class="relative">
+                        <button id="lang-switcher-btn" type="button" class="flex items-center gap-x-1 text-sm px-3 py-2 rounded-md bg-white text-gray-700 hover:bg-gray-50 border border-gray-200">
+                            {{range .LangLinks}}
+                                {{if .Current}}
+                                    <span>{{.DisplayName}}</span>
+                                {{end}}
+                            {{end}}
+                            <svg class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                        <div id="lang-switcher-dropdown" class="absolute right-0 mt-2 w-[360px] bg-white rounded-xl shadow-xl focus:outline-none z-10 overflow-hidden border border-gray-100 hidden transform opacity-0 scale-95 transition-all duration-100 ease-out">
+                            <div class="p-3">
+                                <div class="grid grid-cols-3 gap-2">
+                                    {{range .LangLinks}}
+                                    <a href="{{.URL}}" class="px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 text-center rounded-md transition duration-150 ease-in-out {{if .Current}}bg-primary-50 text-primary-700 font-medium hover:bg-primary-100{{end}}">
+                                        {{.DisplayName}}
+                                    </a>
+                                    {{end}}
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -737,5 +753,58 @@
             renderHistory();
         });
     </script>
-</body>
-</html>
+
+    <!-- Language Switcher Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const btn = document.getElementById('lang-switcher-btn');
+            const dropdown = document.getElementById('lang-switcher-dropdown');
+            let isOpen = false;
+
+            // Toggle dropdown
+            function toggleDropdown() {
+                isOpen = !isOpen;
+                if (isOpen) {
+                    dropdown.classList.remove('hidden');
+                    // 使用 setTimeout 来确保 hidden 被移除后再添加动画类
+                    setTimeout(() => {
+                        dropdown.classList.remove('opacity-0', 'scale-95');
+                        dropdown.classList.add('opacity-100', 'scale-100');
+                    }, 10);
+                } else {
+                    dropdown.classList.remove('opacity-100', 'scale-100');
+                    dropdown.classList.add('opacity-0', 'scale-95');
+                    // 等待过渡动画完成后再隐藏元素
+                    setTimeout(() => {
+                        dropdown.classList.add('hidden');
+                    }, 100);
+                }
+            }
+
+            // 点击按钮切换下拉菜单
+            btn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                toggleDropdown();
+            });
+
+            // 点击下拉菜单内部时阻止冒泡，避免触发外部点击事件
+            dropdown.addEventListener('click', function(e) {
+                e.stopPropagation();
+            });
+
+            // 点击页面其他部分关闭下拉菜单
+            document.addEventListener('click', function() {
+                if (isOpen) {
+                    toggleDropdown();
+                }
+            });
+
+            // 按 ESC 键关闭下拉菜单
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && isOpen) {
+                    toggleDropdown();
+                }
+            });
+        });
+    </script>
+</head>
