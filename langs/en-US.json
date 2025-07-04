@@ -60,6 +60,11 @@
     "knowledge": {
         "title": "URL Structure Guide",
         "description": "Learn about URL components and understand the anatomy of Uniform Resource Locators",
+        "table": {
+            "component": "Component",
+            "description": "Description",
+            "details": "Details"
+        },
         "urlStructure": {
             "title": "Complete URL Structure",
             "description": "The complete syntax structure of URLs and meaning of each component",

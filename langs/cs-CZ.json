@@ -60,6 +60,11 @@
     "knowledge": {
         "title": "Průvodce strukturou URL adresy",
         "description": "Naučte se o součástech URL adresy a pochopení jednotných identifikátorů zdrojů.",
+        "table": {
+            "component": "Komponenta",
+            "description": "Popis",
+            "details": "Detaily"
+        },
         "urlStructure": {
             "title": "Kompletní struktura URL adresy",
             "description": "Plná syntaktická struktura URL adresy a význam každé součásti.",

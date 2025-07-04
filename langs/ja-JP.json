@@ -60,6 +60,11 @@
     "knowledge": {
         "title": "URL構造ガイド",
         "description": "URLコンポーネントについて学び、統一リソースロケータの構造を理解する",
+        "table": {
+            "component": "コンポーネント",
+            "description": "説明",
+            "details": "詳細"
+        },
         "urlStructure": {
             "title": "完全なURL構造",
             "description": "URLの完全な構文構造と各コンポーネントの意味",

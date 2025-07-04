@@ -60,6 +60,11 @@
     "knowledge": {
         "title": "URL 结构科普",
         "description": "深入了解 URL 的各个组成部分，掌握统一资源定位符的构成原理",
+        "table": {
+            "component": "组件",
+            "description": "描述",
+            "details": "详细信息"
+        },
         "urlStructure": {
             "title": "URL 完整结构",
             "description": "统一资源定位符的完整语法结构和各部分含义",

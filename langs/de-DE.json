@@ -60,6 +60,11 @@
     "knowledge": {
         "title": "Leitfaden zur URL-Struktur",
         "description": "Lernen Sie die Komponenten von URLs kennen und verstehen Sie die Analyse von Uniform Resource Identifiers",
+        "table": {
+            "component": "Komponente",
+            "description": "Beschreibung",
+            "details": "Details"
+        },
         "urlStructure": {
             "title": "Vollständige URL-Struktur",
             "description": "Die vollständige grammatikalische Struktur von URLs und die Bedeutung jeder Komponente",
