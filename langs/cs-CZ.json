@@ -1,0 +1,144 @@
+{
+    "title": "Internetový URL parser - Analyzátor URL adres",
+    "description": "Kompletní systém pro parsování URL adres, který poskytuje intuitivní rozhraní pro analýzu a pochopení různých součástí URL adres a šíří znalosti o HTTP.",
+    "keywords": "Parser URL adres, Analýza URL adres, Nástroje pro HTTP, Internetové nástroje, Součásti URL adresy, Parametry požadavku",
+    "header": {
+        "title": "Internetový URL parser",
+        "subtitle": "Analyzátor URL adres",
+        "description": "Analýza a pochopení součástí URL adresy"
+    },
+    "nav": {
+        "parser": "Parser URL adres",
+        "history": "Historie",
+        "compare": "Porovnání",
+        "knowledge": "Znalosti o HTTP",
+        "language": "Jazyk"
+    },
+    "parser": {
+        "title": "Parser URL adres",
+        "inputLabel": "Zadejte URL adresu",
+        "inputPlaceholder": "Zadejte URL adresy, které chcete analyzovat. Podporuje více adres (po jedné na řádek).",
+        "parseButton": "Analyzovat",
+        "clearButton": "Vyčistit",
+        "exampleUrls": "Příklady URL adres",
+        "batchMode": "Dávkový režim",
+        "privacyMode": "Režim soukromí",
+        "privacyModeHelp": "Po zapnutí se v historii neuloží URL adresy obsahující citlivé informace."
+    },
+    "result": {
+        "title": "Výsledek analýzy",
+        "protocol": "Protokol",
+        "userInfo": "Uživatelské informace",
+        "host": "Hostitel",
+        "port": "Port",
+        "path": "Cesta",
+        "query": "Parametry požadavku",
+        "fragment": "Fragment",
+        "copyButton": "Kopírovat",
+        "copySuccess": "Úspěšně zkopírováno do schránky",
+        "invalid": "Neplatná URL adresa",
+        "empty": "Prosím, zadejte URL adresu k analýze."
+    },
+    "history": {
+        "title": "Historie",
+        "empty": "V historii nejsou žádné záznamy",
+        "clearAll": "Vyčistit vše",
+        "parseAgain": "Analyzovat znovu",
+        "delete": "Smazat"
+    },
+    "compare": {
+        "title": "Porovnávací analýza URL adres",
+        "selectUrls": "Vyberte URL adresy k porovnání (maximálně 3)",
+        "compareButton": "Spustit porovnání",
+        "clearCompare": "Vyčistit porovnání",
+        "differences": "Rozdíly",
+        "similarities": "Podobnosti",
+        "exportReport": "Exportovat hlášení",
+        "noUrls": "Prosím, vyberte alespoň 2 URL adresy k porovnání.",
+        "maxUrls": "Můžete vybrat maximálně 3 URL adresy k porovnání."
+    },
+    "knowledge": {
+        "title": "Průvodce strukturou URL adresy",
+        "description": "Naučte se o součástech URL adresy a pochopení jednotných identifikátorů zdrojů.",
+        "urlStructure": {
+            "title": "Kompletní struktura URL adresy",
+            "description": "Plná syntaktická struktura URL adresy a význam každé součásti.",
+            "details": "Schéma://[Uživatelské_informace@]Hostitel[:Port][/Cesta][?Požadavek][#Fragment]"
+        },
+        "scheme": {
+            "title": "Schéma (protokol)",
+            "description": "Určuje protokol používaný pro přístup k zdroji, jako je http, https, ftp, mailto.",
+            "details": "Časté: http(80), https(443), ftp(21), ws(80), wss(443)"
+        },
+        "authority": {
+            "title": "Komponenta autority",
+            "description": "Obsahuje uživatelské informace, název hostitele a číslo portu pro identifikaci zdroje.",
+            "details": "Formát: [Uživatelské_informace@]Hostitel[:Port], například, uživatel:heslo@ukazka.cz:8080"
+        },
+        "host": {
+            "title": "Hostitel (doména/IP adresa)",
+            "description": "Určuje server podle doménového jména nebo IP adresy a je nejdůležitější součástí URL adresy.",
+            "details": "Může být doména (ukazka.cz), IPv4 (192.168.1.1) nebo IPv6 ([::1])"
+        },
+        "port": {
+            "title": "Číslo portu",
+            "description": "Určuje port služby na serveru. Pokud je vynecháno, použije se výchozí port pro daný protokol.",
+            "details": "Rozsah: 1 - 65535, často používané: 80 (HTTP), 443 (HTTPS), 21 (FTP)"
+        },
+        "path": {
+            "title": "Komponenta cesty",
+            "description": "Určuje přesné umístění zdroje na serveru, podobně jako cesta v souborovém systému.",
+            "details": "Hierarchická struktura oddělená /: /dokumenty/rucovodstvi/instalace.html"
+        },
+        "query": {
+            "title": "Parametry požadavku",
+            "description": "Klíč - hodnotové dvojice začínající ?, pro posílání dalších informací na server.",
+            "details": "Formát: ?klic1=hodnota1&klic2=hodnota2. Speciální znaky musí být kódovány podle standardu pro URL adresy."
+        },
+        "fragment": {
+            "title": "Definice fragmentu",
+            "description": "Začíná # pro navigaci uvnitř stránky a obvykle odkazuje na konkrétní sekce stránky.",
+            "details": "Pro zobrazení pouze u klienta a neposílá se na server, například, #sekce1"
+        },
+        "userinfo": {
+            "title": "Uživatelské informace",
+            "description": "Obsahuje uživatelské jméno a heslo pro identifikaci. Je zřídka používáno v moderních aplikacích.",
+            "details": "Formát: uživatelské_jméno:heslo@. Nevhodné z bezpečnostních důvodů."
+        },
+        "encoding": {
+            "title": "Pravidla pro kódování URL adresy",
+            "description": "Speciální znaky musí být kódovány v procentovém formátu, aby byla zajištěna správná přenositelnost URL adresy.",
+            "details": "Mezera → %20, Čínské znaky → UTF - 8 kódování, Rezervované znaky jako ? → %3F"
+        },
+        "relative": {
+            "title": "Relativní URL adresy",
+            "description": "Odkazy na cesty na základě aktuálního umístění stránky, což usnadňuje psaní URL adres.",
+            "details": "./Stejný úroveň, ../Nahoru, /Kořenová cesta, //Relativní k protokolu, ?Pouze požadavek"
+        },
+        "standards": {
+            "title": "Standardy pro URL adresy",
+            "description": "Sledují RFC 3986 a další mezinárodní standardy pro dosažení jednotnosti a kompatibility URL adres.",
+            "details": "Obvykle je maximální délka omezena na 2048 znaků a podporuje mezinárodní doménová jména."
+        }
+    },
+    "examples": {
+        "basic": "https://www.ukazka.cz",
+        "withPath": "https://www.ukazka.cz/cesta/k/zdroji",
+        "withQuery": "https://www.ukazka.cz/hledani?q=klicove_slovo&stranka=1",
+        "withFragment": "https://www.ukazka.cz/stranka#sekce",
+        "withPort": "https://www.ukazka.cz:8080/api",
+        "withAuth": "https://uzivatel:heslo@www.ukazka.cz/bezpecne",
+        "ftp": "ftp://soubory.ukazka.cz/adresar/soubor.txt",
+        "mailto": "mailto:nekdo@ukazka.cz?predmet=Ahoj"
+    },
+    "error": {
+        "invalidUrl": "Prosím, zadejte platnou URL adresu.",
+        "networkError": "Sítový problém. Prosím, zkuste to později.",
+        "storageError": "Chyba při ukládání do úložiště."
+    },
+    "footer": {
+        "copyright": "© 2024 Internetový URL parser. Všechna práva vyhrazena.",
+        "openSource": "Otevřený zdrojový kód",
+        "feedback": "Zpětná vazba"
+    }
+}

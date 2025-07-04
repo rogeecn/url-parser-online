@@ -1,0 +1,144 @@
+{
+    "title": "Internet-URL-Parser - Tool zur Analyse von URLs",
+    "description": "Ein umfassendes Tool zur Zerlegung von Internet-URLs, das eine intuitive Benutzeroberfläche zur Analyse und zum Verständnis der verschiedenen Komponenten von URLs bietet, zusammen mit der Verbreitung von Wissen über HTTP.",
+    "keywords": "URL-Parser,URL-Analyse,HTTP-Tools,Web-Tools,URL-Komponenten,Abfrageparameter",
+    "header": {
+        "title": "Internet-URL-Parser",
+        "subtitle": "Tool zur Analyse von URLs",
+        "description": "Analysieren und Verstehen der Komponenten von URLs"
+    },
+    "nav": {
+        "parser": "URL-Parser",
+        "history": "Verlauf",
+        "compare": "Vergleich",
+        "knowledge": "HTTP-Wissen",
+        "language": "Sprache"
+    },
+    "parser": {
+        "title": "URL-Parser",
+        "inputLabel": "Geben Sie die URL ein",
+        "inputPlaceholder": "Geben Sie die URLs ein, die Sie analysieren möchten (unterstützt mehrere URLs, eine pro Zeile)",
+        "parseButton": "Analysieren",
+        "clearButton": "Löschen",
+        "exampleUrls": "Beispiel-URLs",
+        "batchMode": "Stapelverarbeitung",
+        "privacyMode": "Privatmodus",
+        "privacyModeHelp": "Wenn aktiviert, werden URLs mit vertraulichen Informationen nicht im Verlauf gespeichert"
+    },
+    "result": {
+        "title": "Analyseergebnis",
+        "protocol": "Protokoll",
+        "userInfo": "Benutzerinformation",
+        "host": "Host",
+        "port": "Port",
+        "path": "Pfad",
+        "query": "Abfrageparameter",
+        "fragment": "Fragment",
+        "copyButton": "Kopieren",
+        "copySuccess": "Erfolgreich in die Zwischenablage kopiert",
+        "invalid": "Ungültige URL",
+        "empty": "Bitte geben Sie eine URL zum Analysieren ein"
+    },
+    "history": {
+        "title": "Verlauf",
+        "empty": "Keine Einträge im Verlauf",
+        "clearAll": "Alles löschen",
+        "parseAgain": "Erneut analysieren",
+        "delete": "Löschen"
+    },
+    "compare": {
+        "title": "Vergleichsanalyse von URLs",
+        "selectUrls": "Wählen Sie URLs zum Vergleich aus (max. 3)",
+        "compareButton": "Vergleich starten",
+        "clearCompare": "Vergleich löschen",
+        "differences": "Unterschiede",
+        "similarities": "Ähnlichkeiten",
+        "exportReport": "Bericht exportieren",
+        "noUrls": "Bitte wählen Sie mindestens 2 URLs zum Vergleich aus",
+        "maxUrls": "Sie können maximal 3 URLs zum Vergleich auswählen"
+    },
+    "knowledge": {
+        "title": "Leitfaden zur URL-Struktur",
+        "description": "Lernen Sie die Komponenten von URLs kennen und verstehen Sie die Analyse von Uniform Resource Identifiers",
+        "urlStructure": {
+            "title": "Vollständige URL-Struktur",
+            "description": "Die vollständige grammatikalische Struktur von URLs und die Bedeutung jeder Komponente",
+            "details": "Schema://[Benutzerinformation@]Host[:Port][/Pfad][?Abfrage][#Fragment]"
+        },
+        "scheme": {
+            "title": "Schema (Protokoll)",
+            "description": "Gibt das Protokoll an, das zum Zugriff auf die Ressource verwendet wird, wie http, https, ftp, mailto",
+            "details": "Häufig verwendete: http(80), https(443), ftp(21), ws(80), wss(443)"
+        },
+        "authority": {
+            "title": "Authoritäts-Komponente",
+            "description": "Enthält Benutzerinformationen, Hostnamen und Portnummer zur Identifizierung der Ressource",
+            "details": "Format: [Benutzerinformation@]Host[:Port], z.B. benutzer:passwort@beispiel.de:8080"
+        },
+        "host": {
+            "title": "Host (Domain/IP-Adresse)",
+            "description": "Identifiziert den Server durch Domänenname oder IP-Adresse und ist der wichtigste Teil einer URL",
+            "details": "Kann Domäne (beispiel.de), IPv4 (192.168.1.1) oder IPv6 ([::1]) sein"
+        },
+        "port": {
+            "title": "Portnummer",
+            "description": "Gibt den Port der Dienst auf dem Server an. Wenn weggelassen, wird der Standardport für das Protokoll verwendet",
+            "details": "Bereich: 1 - 65535, häufige Standards: 80 (HTTP), 443 (HTTPS), 21 (FTP)"
+        },
+        "path": {
+            "title": "Pfad-Komponente",
+            "description": "Gibt den genauen Speicherort der Ressource auf dem Server an, ähnlich einem Dateisystempfad",
+            "details": "Hierarchische Struktur getrennt durch /: /dokumente/anleitung/installation.html"
+        },
+        "query": {
+            "title": "Abfrageparameter",
+            "description": "Schlüssel-Wert-Paare, beginnend mit ?, zur Übertragung zusätzlicher Informationen an den Server",
+            "details": "Format: ?schlüssel1=wert1&schlüssel2=wert2. Sonderzeichen müssen URL-codiert werden"
+        },
+        "fragment": {
+            "title": "Fragmentbezeichner",
+            "description": "Beginnt mit # zur Navigation innerhalb der Seite und verweist üblicherweise auf bestimmte Abschnitte der Seite",
+            "details": "Nur für den Client sichtbar, wird nicht an den Server gesendet, z.B. #abschnitt1"
+        },
+        "userinfo": {
+            "title": "Benutzerinformation",
+            "description": "Enthält Benutzername und Passwort zur Authentifizierung. Selten in modernen Anwendungen verwendet",
+            "details": "Format: benutzername:passwort@. Wird aus Sicherheitsgründen nicht empfohlen"
+        },
+        "encoding": {
+            "title": "URL-Codierungsregeln",
+            "description": "Sonderzeichen müssen im Prozentformat codiert werden, um eine korrekte Übertragung der URL zu gewährleisten",
+            "details": "Leerzeichen → %20, Chinesische Zeichen → UTF-8-Codierung, reservierte Zeichen wie ? → %3F"
+        },
+        "relative": {
+            "title": "Relative URLs",
+            "description": "Verweise auf Pfade basierend auf der aktuellen Position der Seite, was die URL-Schreibung vereinfacht",
+            "details": "./Gleiches Verzeichnis, ../Ein Verzeichnis höher, /Wurzelpfad, //Protokoll-relative, ?Nur Abfrage"
+        },
+        "standards": {
+            "title": "URL-Standards",
+            "description": "befolgen RFC 3986 und andere internationale Standards zur Einheitlichkeit und Kompatibilität von URLs",
+            "details": "Maximale Länge ist üblicherweise auf 2048 Zeichen beschränkt und unterstützt internationale Domänennamen"
+        }
+    },
+    "examples": {
+        "basic": "https://www.example.com",
+        "withPath": "https://www.example.com/path/to/resource",
+        "withQuery": "https://www.example.com/search?q=keyword&page=1",
+        "withFragment": "https://www.example.com/page#section",
+        "withPort": "https://www.example.com:8080/api",
+        "withAuth": "https://user:pass@www.example.com/secure",
+        "ftp": "ftp://files.example.com/directory/file.txt",
+        "mailto": "mailto:someone@example.com?subject=Hello"
+    },
+    "error": {
+        "invalidUrl": "Bitte geben Sie eine gültige URL ein",
+        "networkError": "Netzwerkfehler, bitte versuchen Sie es später erneut",
+        "storageError": "Fehler beim lokalen Speichern"
+    },
+    "footer": {
+        "copyright": "© 2024 Internet-URL-Parser. Alle Rechte vorbehalten.",
+        "openSource": "Open Source",
+        "feedback": "Feedback"
+    }
+}
